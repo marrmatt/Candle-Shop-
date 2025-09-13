@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scented Serenity</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        primary: '#6B46C1', // Purple
+                        secondary: '#FBD38D', // Yellow
+                        background: '#FFF5E1', // Light Cream
+                        text: '#2D3748', // Dark Gray
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #FFF5E1;
+            color: #2D3748;
+        }
+    </style>
+</head>
+<body class="bg-background text-text">
+
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-xl md:text-2xl font-bold text-primary">Scented Serenity</a>
+            <div class="hidden md:flex space-x-6 lg:space-x-8 text-sm md:text-base font-medium">
+                <a href="#" class="text-text hover:text-primary transition-colors">Home</a>
+                <a href="#products" class="text-text hover:text-primary transition-colors">Shop</a>
+                <a href="#" class="text-text hover:text-primary transition-colors">About</a>
+                <a href="#" class="text-text hover:text-primary transition-colors">Contact</a>
+            </div>
+            <div class="flex items-center space-x-4">
+                <a href="#" class="relative">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-text hover:text-primary transition-colors" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.182 1.953.665 2.574C5.952 20.91 6.88 21 8 21h8a2 2 0 002-2V7a2 2 0 00-2-2h-5.586a1 1 0 01-.707-.293l-1.414-1.414A1 1 0 008.586 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2H9.414a1 1 0 00-.707.293l-1.414 1.414A1 1 0 006.586 7H5a2 2 0 00-2 2v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-5.414a1 1 0 00-.707-.293l-1.414-1.414A1 1 0 0012.586 3H9.414a1 1 0 00-.707.293L7.293 4.707A1 1 0 007 5H5a2 2 0 00-2 2z" />
+                    </svg>
+                    <span class="absolute -top-1 -right-1 bg-primary text-white text-xs rounded-full h-4 w-4 flex items-center justify-center">0</span>
+                </a>
+            </div>
+            <button class="md:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-text" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+                </svg>
+            </button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <main>
+        <section class="relative bg-white pt-12 md:pt-24 pb-12 overflow-hidden">
+            <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 text-center md:text-left mb-8 md:mb-0">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight mb-4">Crafted with Care, <br>Scented for Serenity</h1>
+                    <p class="text-base md:text-lg mb-6 max-w-lg mx-auto md:mx-0">Discover our collection of handcrafted candles, designed to elevate your space and soothe your soul. Made from natural ingredients for a clean burn and a delightful aroma.</p>
+                    <a href="#products" class="inline-block bg-primary text-white font-semibold py-3 px-8 rounded-lg shadow-lg hover:bg-opacity-90 transition-all duration-300 transform hover:scale-105">Shop All Candles</a>
+                </div>
+                <div class="md:w-1/2 flex justify-center md:justify-end">
+                    <img src="https://placehold.co/500x500/FBD38D/2D3748?text=Handcrafted+Candle" alt="Handcrafted candle" class="rounded-3xl shadow-2xl object-cover w-4/5 md:w-full max-w-lg animate-pulse">
+                </div>
+            </div>
+        </section>
+
+        <!-- Product Grid -->
+        <section id="products" class="py-16 md:py-24">
+            <div class="container mx-auto px-4">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Signature Collection</h2>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                    <!-- Product Card 1 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/C6E6F2/2D3748?text=Lavender+Serenity" alt="Lavender candle" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Lavender Serenity</h3>
+                            <p class="text-sm text-gray-600 mb-4">A calming blend of French lavender and vanilla bean.</p>
+                            <span class="text-xl font-bold text-primary">$24.99</span>
+                            <button class="mt-4 w-full bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 2 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/F0D9D9/2D3748?text=Citrus+Bliss" alt="Citrus candle" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Citrus Bliss</h3>
+                            <p class="text-sm text-gray-600 mb-4">An uplifting mix of zesty orange and sweet grapefruit.</p>
+                            <span class="text-xl font-bold text-primary">$22.50</span>
+                            <button class="mt-4 w-full bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+
+                    <!-- Product Card 3 -->
+                    <div class="bg-white rounded-3xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
+                        <img src="https://placehold.co/600x400/D4F3F5/2D3748?text=Forest+Breeze" alt="Forest candle" class="w-full h-64 object-cover">
+                        <div class="p-6 text-center">
+                            <h3 class="text-lg font-semibold mb-2">Forest Breeze</h3>
+                            <p class="text-sm text-gray-600 mb-4">Earthy notes of pine, cedarwood, and fresh moss.</p>
+                            <span class="text-xl font-bold text-primary">$26.00</span>
+                            <button class="mt-4 w-full bg-primary text-white font-semibold py-2 px-4 rounded-lg hover:bg-opacity-90 transition-colors">Add to Cart</button>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-primary text-white py-16 md:py-24">
+            <div class="container mx-auto px-4 text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">What Our Customers Say</h2>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div class="p-6 bg-white bg-opacity-20 rounded-2xl shadow-lg">
+                        <p class="italic text-lg mb-4">"The best candles I've ever bought! The scent is long-lasting and the packaging is beautiful."</p>
+                        <p class="font-semibold">- Jane D.</p>
+                    </div>
+                    <div class="p-6 bg-white bg-opacity-20 rounded-2xl shadow-lg">
+                        <p class="italic text-lg mb-4">"Absolutely love the 'Lavender Serenity'. It's perfect for relaxing after a long day."</p>
+                        <p class="font-semibold">- Mark P.</p>
+                    </div>
+                    <div class="p-6 bg-white bg-opacity-20 rounded-2xl shadow-lg">
+                        <p class="italic text-lg mb-4">"Fast shipping and a fantastic product. I'll definitely be a returning customer."</p>
+                        <p class="font-semibold">- Emily S.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-text text-white py-8 md:py-12">
+        <div class="container mx-auto px-4 text-center text-sm">
+            <p>&copy; 2023 Scented Serenity. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+                      
